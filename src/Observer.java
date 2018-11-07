@@ -1,5 +1,5 @@
 public interface Observer {
-    public void update( Subject T){
-        
-    }
+    public void update( Subject T);
+
+
 }
