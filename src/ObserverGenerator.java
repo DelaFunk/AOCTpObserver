@@ -1,3 +1,3 @@
 public interface ObserverGenerator {
-    update(subject:Generator);
+   public void update(Subject Generator);
 }
