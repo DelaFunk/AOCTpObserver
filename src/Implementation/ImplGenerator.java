@@ -22,4 +22,15 @@ public abstract class ImplGenerator implements Generator {
     public int getValue(){
         return this.value;
     }
+    public void setValue(int value){
+        this.value = value;
+    }
+
+    public void tick(){
+        for(int i = 0; i < observerList.size(); i++){
+            Observer o = observerList.get(i);
+            o.update(this);
+        }
+    }
+
 }
